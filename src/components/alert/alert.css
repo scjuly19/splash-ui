@@ -1,0 +1,63 @@
+:root {
+  --primary-bg: #cfe2ff;
+  --primary-font: #084298;
+  --primary-border: #b6d4fe;
+  --secondary-bg: #e2e3e5;
+  --secondary-font: #41464b;
+  --secondary-border: #d3d6d8;
+  --success-bg: #d1e7dd;
+  --sucess-font: #0f5132;
+  --success-border: #badbcc;
+  --danger-bg: #f8d7da;
+  --danger-font: #842029;
+  --danger-border: #f5c2c7;
+  --warning-bg: #fff3cd;
+  --warning-font: #664d03;
+  --warning-border: #ffecb5;
+  --notify-bg: #cff4fc;
+  --notify-font: #055160;
+  --notify-border: #b6effb;
+  --basic-bg: #d3d3d4;
+  --basic-font: #141619;
+  --basic-border: #bcbebf;
+}
+.alert {
+  padding: 1rem 0.5rem;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.primary-alert {
+  background-color: var(--primary-bg);
+  color: var(--primary-font);
+  border-color: var(--primary-border);
+}
+.secondary-alert {
+  background-color: var(--secondary-bg);
+  color: var(--secondary-font);
+  border-color: var(--secondary-border);
+}
+.success-alert {
+  color: var(--sucess-font);
+  background-color: var(--success-bg);
+  border-color: var(--success-border);
+}
+.danger-alert {
+  color: var(--danger-font);
+  background-color: var(--danger-bg);
+  border-color: var(--danger-border);
+}
+.warning-alert {
+  color: var(--warning-font);
+  background-color: var(--warning-bg);
+  border-color: var(--warning-border);
+}
+.notify-alert {
+  color: var(--notify-font);
+  background-color: var(--notify-bg);
+  border-color: var(--notify-border);
+}
+.basic-alert {
+  color: var(--basic-font);
+  background-color: var(--basic-bg);
+  border-color: var(--basic-border);
+}
