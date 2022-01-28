@@ -1,0 +1,50 @@
+:root {
+    --primary: #302ae6;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .primary-btn {
+    color: white;
+    border: 1px solid;
+    border-color: var(--primary);
+    background-color: var(--primary);
+  }
+  .outline-btn {
+    color: var(--primary);
+    border: 1px solid;
+    border-color: var(--primary);
+    background-color: white;
+  }
+  .link-btn {
+    color: var(--primary);
+    text-decoration: underline;
+    background: none;
+  
+  }
+  .icon-btn {
+    color: var(--primary);
+    background: none;
+  
+  }
+  .floating-btn{
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background: var(--primary);
+      padding: 1rem;
+      text-align: center;
+      color: white;
+  
+  }
+  .no-border {
+    border: none;
+    outline: none;
+  }
+  
