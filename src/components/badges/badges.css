@@ -1,44 +1,46 @@
-:root{
-    --online-bg:#1b7052;
-    --offline-bg:#d3d3d4;
-    --busy-bg:#dc3545;
-    --away-bg:#ff9204;
-    --num-bg:#084298;
-    
+:root {
+  --online-bg: #1b7052;
+  --offline-bg: #d3d3d4;
+  --busy-bg: #dc3545;
+  --away-bg: #ff9204;
+  --num-bg: #084298;
 }
 
-.status-badge{
-    border: 2px solid white;
-    height: 1.25rem; 
-    min-width: 1.25rem;
-    display: inline-block;
-    position: absolute;
-    right: 14%;
-    bottom: 18%;
-    font-size: 0.75em;
-    
+.status-badge {
+  border: 2px solid white;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  display: inline-block;
+  position: absolute;
+  right: 14%;
+  bottom: 18%;
+  font-size: 0.75em;
 }
-.round-badge{
-    border-radius: 50%;
+.round-badge {
+  border-radius: 50%;
 }
-.status-online{
-    background-color: var(--online-bg);
+.status-online {
+  background-color: var(--online-bg);
 }
-.status-offline{
-    background-color: var(--offline-bg);
+.status-offline {
+  background-color: var(--offline-bg);
 }
-.status-busy{
-    background-color: var(--busy-bg);
+.status-busy {
+  background-color: var(--busy-bg);
 }
-.status-away{
-    background-color: var(--away-bg);
+.status-away {
+  background-color: var(--away-bg);
 }
 
-.badge-wth-number{
-    right: -30%;
-    top: -15%;
-    text-align: center;
-    color: white;
-    border: none;
-    background-color: var(--num-bg);
+.badge-wth-number {
+  right: -30%;
+  top: -15%;
+  text-align: center;
+  color: white;
+  border: none;
+  background-color: var(--num-bg);
+}
+.card-badge {
+  right: -2%;
+  top: -2%;
 }

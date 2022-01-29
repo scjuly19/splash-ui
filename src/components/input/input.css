@@ -1,0 +1,42 @@
+:root {
+  --basic: #d3d3d4;
+  --primary: #084298;
+  --success: #1b7052;
+  --error: #dc3545;
+}
+.input-wrapper {
+  padding: 0;
+  width: 100%;
+}
+.input {
+  border: 1px solid;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+  font-size: 1em;
+}
+.basic-input {
+  border-color: var(--basic);
+}
+.primary-input {
+  border-color: var(--primary);
+}
+.validation-success-input {
+  border-color: var(--success);
+}
+.error-input {
+  border-color: var(--error);
+}
+.validation-msg {
+  font-size: 0.75em;
+}
+.success-msg {
+  color: var(--success);
+}
+.error-msg {
+  color: var(--error);
+}
+.input:focus {
+  outline: 0;
+  border-width: 2px;
+}

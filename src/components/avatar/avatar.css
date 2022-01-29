@@ -1,22 +1,21 @@
 .avatar {
-    border-radius: 50%;
-    object-fit: contain;
-    overflow:hidden;
- 
- }
- .avatar-lg{
-     width: 10rem;
-     height: 10rem;
- }
- .avatar-md{
-     width: 8rem;
-     height: 8rem;
- }
- .avatar-sm{
-     width: 5rem;
-     height: 5rem;
- }
- .avatar-xs{
-     width: 3rem;
-     height: 3rem;
- }
+  border-radius: 50%;
+  object-fit: contain;
+  overflow: hidden;
+}
+.avatar-lg {
+  width: 10rem;
+  height: 10rem;
+}
+.avatar-md {
+  width: 8rem;
+  height: 8rem;
+}
+.avatar-sm {
+  width: 5rem;
+  height: 5rem;
+}
+.avatar-xs {
+  width: 3rem;
+  height: 3rem;
+}

@@ -1,0 +1,85 @@
+:root {
+  --overlay-bg: #d3d3d4;
+  --overlay-text: #41464b;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+}
+.card-vertical {
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+  height: fit-content;
+}
+.card-horizontal {
+  flex-direction: row;
+  max-width: 520px;
+}
+.card-horizontal .card-media img {
+  height: 100%;
+}
+.card-vertical .card-media img {
+  max-height: 250px;
+}
+.card-media img {
+  border-radius: 5px 5px 0px 0px;
+}
+.card-description-wrapper {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+.card-primary {
+  margin-top: 1rem;
+}
+.card-primary-subtitle {
+  margin-top: 3px;
+  opacity: 0.5;
+}
+.card-secondary {
+  margin: 1.5rem 0rem;
+}
+.card-secondary-description {
+  opacity: 0.8;
+}
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.card-actions a {
+  margin: 0px 5px;
+}
+.card-overlay {
+  background: var(--overlay-bg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-overlay a {
+  padding: 0.5rem 2rem;
+  background: var(--overlay-text);
+  color: white;
+}
+.card-wth-dismiss .card-media img {
+  border-radius: 0px;
+}
+.card-dismiss-icon {
+  position: absolute;
+  right: 1%;
+  top: 0;
+  color: black;
+}
