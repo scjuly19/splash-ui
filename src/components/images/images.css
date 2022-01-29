@@ -1,7 +1,11 @@
 .responsive-img {
-    width: 100%;
-    height: auto;
-  }
-  .round-img{
-      border-radius: 50%;
-  }
+  width: 100%;
+  height: auto;
+}
+.round-img {
+  border-radius: 50%;
+}
+.small-img {
+  max-height: 320px;
+  max-width: 100%;
+}

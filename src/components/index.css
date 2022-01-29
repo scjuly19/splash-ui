@@ -1,1 +1,8 @@
-@import url('./avatar/avatar.css');
+@import url('./drawer/drawer.css');
+@import url('./card/card.css');
+@import url("./avatar/avatar.css");
+@import url('./alert/alert.css');
+@import url('./badges/badges.css');
+@import url('./button/button.css');
+@import url('./images/images.css');
+@import url('./input/input.css');

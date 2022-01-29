@@ -1,27 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/components/index.css">
-    <link rel="stylesheet" href="./src/utilities/index.css">
-    <title>Docs</title>
-</head>
-<body>
-    <section id="#avatar" class="example flex align-items-center justify-around wrap">
-        <div class="avatar avatar-xs">
-          <img src="https://picsum.photos/id/237/200/300.jpg" alt="" class="responsive-img rounded-img avatar-xs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/utilities/index.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="docs.css" />
+    <link rel="stylesheet" href="./src/components/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="./splash.png" type="image/icon type" />
+    <title>Documentation</title>
+  </head>
+  <body>
+    <header class="header-wrapper bottom-border">
+      <div class="header-logo">
+        <a href="index.html">Splash UI</a>
+        <img src="./splash.png" class="icon" />
+      </div>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="no-bullets-li inline-block">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="no-bullets-li inline-block">
+            <a href="examples.html">Examples</a>
+          </li>
+        </ul>
+        <a
+          href="https://github.com/scjuly19/splash-ui"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+        </a>
+        <button
+          class="toggle-mode-btn borderless-btn fs-30"
+          id="toggle-mode"
+          type="button"
+        >
+          <i class="fa fa-moon-o" aria-hidden="true"></i>
+        </button>
+        <a class="nav-dots hide fs-30" id="toggle-menu">
+          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="nav-dots-menu hide" id="nav-dots-menu">
+      <ul class="nav-dots-menu-list">
+        <li class="no-bullets-li"><a href="index.html">Home</a></li>
+        <li class="no-bullets-li"><a href="examples.html">Examples</a></li>
+      </ul>
+    </div>
+
+    <div class="main-wrapper">
+      <nav class="side-nav-container">
+        <div class="side-nav-item">
+          <a>Overview</a>
         </div>
-        <div class="avatar avatar-sm">
-          <img src="https://picsum.photos/id/237/200/300.jpg" alt="" class="responsive-img rounded-img avatar-sm">
+        <div class="side-nav-item">
+          <a>Components</a>
+          <ul class="components-list">
+            <li class="no-bullets-li"><a href="#avatar">Avatar</a></li>
+            <li class="no-bullets-li"><a href="#alerts">Alert</a></li>
+            <li class="no-bullets-li"><a href="#badges">Badge</a></li>
+            <li class="no-bullets-li"><a href="#buttons">Button</a></li>
+            <li class="no-bullets-li"><a href="#cards">Card</a></li>
+            <li class="no-bullets-li"><a href="#images">Image</a></li>
+            <li class="no-bullets-li"><a href="#inputs">Input</a></li>
+          </ul>
         </div>
-        <div class="avatar avatar-md">
-          <img src="https://picsum.photos/id/1025/200/300.jpg" alt="" class="responsive-img rounded-img avatar-md">
+      </nav>
+      <button
+        class="hamburger-menu-btn borderless-btn hide"
+        id="toggle-side-menu"
+      >
+        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+      </button>
+      <div class="drawer-container hide" id="drawer-menu">
+        <div class="drawer-wrapper">
+          <div class="drawer" id="drawer">
+            <button
+              class="`borderless-btn fs-30 drawer-close-btn"
+              id="close-side-menu"
+            >
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <div class="side-nav-item">
+              <a href="">Overview</a>
+            </div>
+            <div class="side-nav-item">
+              <a>Components</a>
+              <ul class="components-list">
+                <li class="no-bullets-li"><a href="#avatar">Avatar</a></li>
+                <li class="no-bullets-li"><a href="#alerts">Alert</a></li>
+                <li class="no-bullets-li"><a href="#badges">Badge</a></li>
+                <li class="no-bullets-li"><a href="#buttons">Button</a></li>
+                <li class="no-bullets-li"><a href="#cards">Card</a></li>
+                <li class="no-bullets-li"><a href="#images">Image</a></li>
+                <li class="no-bullets-li"><a href="#inputs">Input</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="avatar avatar-lg">
-          <img src="https://picsum.photos/id/1025/200/300.jpg" alt="" class="responsive-img rounded-img avatar-lg">
-        </div>
-      </section>
-</body>
+      </div>
+      <main class="main-content-wrapper ml-8">
+        <h1>Getting started with Splash UI</h1>
+        <section id="avatar" class="example flex align-items-center wrap">
+          <div class="avatar avatar-xs m-16">
+            <img
+              src="https://picsum.photos/id/237/200.jpg"
+              alt=""
+              class="responsive-img rounded-img avatar-xs"
+            />
+          </div>
+          <div class="avatar avatar-sm m-16">
+            <img
+              src="https://picsum.photos/id/237/200.jpg"
+              alt=""
+              class="responsive-img rounded-img avatar-sm"
+            />
+          </div>
+          <div class="avatar avatar-md m-16">
+            <img
+              src="https://picsum.photos/id/1025/200.jpg"
+              alt=""
+              class="responsive-img rounded-img avatar-md"
+            />
+          </div>
+          <div class="avatar avatar-lg m-16">
+            <img
+              src="https://picsum.photos/id/1025/200.jpg"
+              alt=""
+              class="responsive-img rounded-img avatar-lg"
+            />
+          </div>
+        </section>
+        <section id="alerts" class="example mt-16">
+          <div class="alert basic-alert">This is a basic alert!</div>
+          <div class="alert primary-alert mt-16">This is a primary alert!</div>
+          <div class="alert secondary-alert mt-16">
+            This is a secondary alert!
+          </div>
+          <div class="alert success-alert mt-16">This is a success alert!</div>
+          <div class="alert danger-alert mt-16">This is a danger alert!</div>
+          <div class="alert warning-alert mt-16">This is a warning alert!</div>
+          <div class="alert notify-alert mt-16">
+            This is a notification alert!
+          </div>
+        </section>
+        <section id="badges" class="example flex align-items-center mt-16 wrap">
+          <div class="relative">
+            <div class="avatar avatar-lg m-16">
+              <img
+                src="https://picsum.photos/id/237/200/300.jpg"
+                alt=""
+                class="responsive-img rounded-img avatar-lg"
+              />
+            </div>
+            <span class="status-badge status-online round-badge"></span>
+          </div>
+          <div class="relative">
+            <div class="avatar avatar-md m-16">
+              <img
+                src="https://picsum.photos/id/237/200/300.jpg"
+                alt=""
+                class="responsive-img rounded-img avatar-md"
+              />
+            </div>
+            <span class="status-badge status-offline round-badge"></span>
+          </div>
+          <div class="relative">
+            <div class="avatar avatar-sm m-16">
+              <img
+                src="https://picsum.photos/id/237/200/300.jpg"
+                alt=""
+                class="responsive-img rounded-img avatar-sm"
+              />
+            </div>
+            <span class="status-badge status-away round-badge"></span>
+          </div>
+          <div class="relative">
+            <div class="avatar avatar-xs m-16">
+              <img
+                src="https://picsum.photos/id/237/200/300.jpg"
+                alt=""
+                class="responsive-img rounded-img avatar-xs"
+              />
+            </div>
+            <span class="status-badge status-busy round-badge"></span>
+          </div>
+          <a class="relative">
+            <span
+              ><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            </span>
+            <span class="status-badge badge-wth-number round-badge">4</span>
+          </a>
+          <a class="relative ml-8">
+            <span
+              ><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+            </span>
+            <span class="status-badge badge-wth-number round-badge">4</span>
+          </a>
+        </section>
+        <section id="buttons" class="example flex align-item-center wrap mt-16">
+          <button class="btn primary-btn">Primary Button</button>
+          <button class="btn outline-btn ml-8">Outlined Button</button>
+          <button class="btn link-btn ml-8 no-border">Link</button>
+          <button class="btn icon-btn no-border">
+            <i class="fa fa-tags fa-2x" aria-hidden="true"></i>
+          </button>
+          <button class="btn floating-btn no-border">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+          </button>
+        </section>
+        <section id="cards" class="example mt-16 flex wrap">
+          <div class="m-16">
+            <div class="card card-vertical">
+              <div class="card-media">
+                <img
+                  src="https://picsum.photos/seed/picsum/200/300.jpg"
+                  alt=""
+                  class="responsive-img"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <h3 class="card-primary-title">Title</h3>
+                  <p class="card-primary-subtitle">Subtitle</p>
+                </div>
+                <div class="card-secondary">
+                  <p class="card-secondary-description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+                <div class="card-actions">
+                  <a><i class="fa fa-heart-o" aria-hidden="true"></i> </a>
+                  <a><i class="fa fa-share-alt" aria-hidden="true"></i> </a>
+                  <a><i class="fa fa-ellipsis-v" aria-hidden="true"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-16">
+            <div class="card card-vertical relative">
+              <div class="card-media">
+                <img
+                  src="https://picsum.photos/seed/picsum/200/300.jpg"
+                  alt=""
+                  class="responsive-img"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <h3 class="card-primary-title">Title</h3>
+                  <p class="card-primary-subtitle">Subtitle</p>
+                </div>
+                <div class="card-secondary">
+                  <p class="card-secondary-description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+                <div class="card-actions">
+                  <a><i class="fa fa-heart-o" aria-hidden="true"></i> </a>
+                  <a><i class="fa fa-share-alt" aria-hidden="true"></i> </a>
+                  <a><i class="fa fa-ellipsis-v" aria-hidden="true"></i> </a>
+                </div>
+              </div>
+              <div class="card-overlay">
+                <a href=""><span>Text Overlay</span> </a>
+              </div>
+            </div>
+          </div>
+          <div class="m-16">
+            <div class="card card-vertical relative">
+              <div class="card-media">
+                <img
+                  src="https://picsum.photos/seed/picsum/200/300.jpg"
+                  alt=""
+                  class="responsive-img"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <h3 class="card-primary-title">Title</h3>
+                  <p class="card-primary-subtitle">Subtitle</p>
+                </div>
+                <div class="card-secondary">
+                  <p class="card-secondary-description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+                <div class="card-actions">
+                  <a><i class="fa fa-heart-o" aria-hidden="true"></i> </a>
+                  <a><i class="fa fa-share-alt" aria-hidden="true"></i> </a>
+                  <a><i class="fa fa-ellipsis-v" aria-hidden="true"></i> </a>
+                </div>
+              </div>
+              <span
+                class="status-badge status-busy round-badge card-badge"
+              ></span>
+            </div>
+          </div>
+          <div class="m-16">
+            <div class="card card-vertical relative card-wth-dismiss">
+              <div class="card-primary px-16">
+                <h3 class="card-primary-title">Title</h3>
+                <p class="card-primary-subtitle">Subtitle</p>
+              </div>
+              <div class="card-media mt-16">
+                <img
+                  src="https://picsum.photos/seed/picsum/200/300.jpg"
+                  alt=""
+                  class="responsive-img"
+                />
+              </div>
+              <div class="card-description-wrapper">
+                <div class="card-secondary">
+                  <p class="card-secondary-description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.djakbdj
+                  </p>
+                </div>
+                <div class="card-actions">
+                  <a><i class="fa fa-heart-o" aria-hidden="true"></i> </a>
+                  <a><i class="fa fa-share-alt" aria-hidden="true"></i> </a>
+                  <a><i class="fa fa-ellipsis-v" aria-hidden="true"></i> </a>
+                </div>
+              </div>
+              <span class="card-dismiss-icon" id="dismiss"
+                ><i class="fa fa-times" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+          <div class="card card-vertical m-16">
+            <div class="card-description-wrapper">
+              <div class="card-primary">
+                <h3 class="card-primary-title">Title</h3>
+                <p class="card-primary-subtitle">Subtitle</p>
+              </div>
+              <div class="card-secondary">
+                <p class="card-secondary-description">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industryLorem Ipsum is simply dummy
+                  text of the printing and typesetting industry
+                </p>
+              </div>
+              <div class="card-actions">
+                <a><i class="fa fa-heart-o" aria-hidden="true"></i> </a>
+                <a><i class="fa fa-share-alt" aria-hidden="true"></i> </a>
+                <a><i class="fa fa-ellipsis-v" aria-hidden="true"></i> </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-16 horizontal-card-wrapper">
+            <div class="card card-horizontal">
+              <div class="card-media">
+                <img
+                  src="https://picsum.photos/seed/picsum/200/300.jpg"
+                  alt=""
+                  class="responsive-img"
+                />
+              </div>
+
+              <div class="card-description-wrapper">
+                <div class="card-primary">
+                  <h3 class="card-primary-title">Title</h3>
+                  <p class="card-primary-subtitle">Subtitle</p>
+                </div>
+                <div class="card-secondary">
+                  <p class="card-secondary-description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </div>
+                <div class="card-actions">
+                  <a><i class="fa fa-heart-o" aria-hidden="true"></i> </a>
+                  <a><i class="fa fa-share-alt" aria-hidden="true"></i> </a>
+                  <a><i class="fa fa-ellipsis-v" aria-hidden="true"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="images" class="example mt-16 flex wrap">
+          <img
+            src="https://picsum.photos/id/1015/200.jpg"
+            alt=""
+            class="responsive-img small-img"
+          />
+          <img
+            src="https://picsum.photos/id/1015/200.jpg"
+            alt=""
+            class="round-img mt-16"
+          />
+        </section>
+        <section id="inputs" class="example mt-16 flex wrap">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              class="input basic-input"
+              placeholder="This is basic input..."
+            />
+          </div>
+          <div class="input-wrapper mt-16">
+            <input
+              type="text"
+              class="input primary-input"
+              placeholder="This is primary input..."
+            />
+          </div>
+          <div class="input-wrapper mt-16">
+            <input
+              type="text"
+              class="input validation-success-input"
+              placeholder="This is a successfully validated input..."
+            />
+            <span class="validation-msg success-msg">Success</span>
+          </div>
+          <div class="input-wrapper mt-16">
+            <input
+              type="text"
+              class="input error-input"
+              placeholder="This is a failed input validation..."
+            />
+            <span class="validation-msg error-msg">Error</span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer b-5">
+      <div class="flex-center text-center">
+        <span>
+          Made with love <i class="fa fa-heart" aria-hidden="true"></i> by
+          Sakshi Chaudhary</span
+        >
+      </div>
+      <div class="flex-center mt-16">
+        <ul>
+          <li class="inline-block no-bullets-li">
+            <a
+              class="fs-30"
+              href="https://github.com/scjuly19"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa fa-github" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="inline-block no-bullets-li">
+            <a
+              class="fs-30"
+              href="https://www.instagram.com/sakshi.codes"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="inline-block no-bullets-li">
+            <a
+              class="fs-30"
+              href="https://www.twitter.com/scjuly19"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="inline-block no-bullets-li">
+            <a class="fs-30" href="https://www.linkedin.com/in/scjuly19"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="./src/components/drawer/drawer.js"></script>
+  </body>
 </html>

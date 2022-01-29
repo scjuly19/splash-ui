@@ -1,0 +1,24 @@
+/*Margin top*/
+.mt-16 {
+  margin-top: 1rem;
+}
+.mt-64 {
+  margin-top: 4rem;
+}
+/* Margin right*/
+.mr-8 {
+  margin-right: 0.5rem;
+}
+/*Margin bottom*/
+/*Margin left*/
+.ml-8 {
+  margin-left: 0.5rem;
+}
+.ml-16 {
+  margin-left: 1rem;
+}
+
+/*Margin from all sides*/
+.m-16 {
+  margin: 1rem;
+}
