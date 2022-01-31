@@ -1,0 +1,12 @@
+/*Alignment of text*/
+.text-center {
+  text-align: center;
+}
+/*Font weights*/
+.bold {
+  font-weight: bold;
+}
+/*Text size*/
+.fs-30 {
+  font-size: 1.5rem;
+}

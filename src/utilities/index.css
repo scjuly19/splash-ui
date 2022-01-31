@@ -1,1 +1,7 @@
 @import url('./display.css');
+@import url('./text.css');
+@import url('./miscellaneous.css');
+@import url('./margins.css');
+@import url('./positions.css');
+@import url('./padding.css');
+@import url('./border.css');

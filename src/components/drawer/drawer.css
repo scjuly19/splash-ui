@@ -1,0 +1,31 @@
+.drawer-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 50;
+}
+.drawer-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backdrop-filter: blur(4px);
+
+}
+.drawer {
+  width: 320px;
+  max-width: calc(100%-3rem);
+  position: relative;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  filter: none;
+  z-index: 9999;
+  overflow-y: auto;
+
+}

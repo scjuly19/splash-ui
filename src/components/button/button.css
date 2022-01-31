@@ -44,3 +44,7 @@
   border: none;
   outline: none;
 }
+.outline-btn:hover {
+  background-color: var(--primary);
+  color: white;
+}
