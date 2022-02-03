@@ -5,3 +5,7 @@
 .px-16 {
   padding: 0rem 1rem;
 }
+/*Overall padding*/
+.p-0{
+  padding:0;
+}

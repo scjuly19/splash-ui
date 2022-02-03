@@ -28,22 +28,17 @@
   border-radius: 5px 5px 0px 0px;
 }
 .card-description-wrapper {
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
   display: flex;
   flex-flow: column wrap;
-}
-.card-primary {
-  margin-top: 1rem;
+  
 }
 .card-primary-subtitle {
-  margin-top: 3px;
   opacity: 0.5;
-}
-.card-secondary {
-  margin: 1.5rem 0rem;
 }
 .card-secondary-description {
   opacity: 0.8;
+  padding-bottom: 1rem;
 }
 .card-actions {
   display: flex;

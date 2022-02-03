@@ -2,7 +2,6 @@
   list-style: none;
 }
 .borderless-btn {
-  outline: none;
   border: none;
   background: transparent;
 }

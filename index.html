@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/utilities/index.css" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="./src/components/button/button.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="icon" href="splash.png" type="image/icon type" />
-    <title>Splash UI</title>
-    <script>
-      // Render blocking JS:
-      if (localStorage.theme)
-        document.documentElement.setAttribute("data-theme", localStorage.theme);
-    </script>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/utilities/index.css" />
+  <link rel="stylesheet" href="./src/components/button/button.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" href="splash.png" type="image/icon type" />
+  <!-- <link rel="stylesheet" href="https://splash-ui-lib.netlify.app/src/components/index.css" /> -->
+  <title>Splash UI</title>
+  <script>
+    // Render blocking JS:
+    if (localStorage.theme)
+      document.documentElement.setAttribute("data-theme", localStorage.theme);
+  </script>
+</head>
+
+<body>
+  <div class="page-container">
     <header class="header-wrapper flex">
       <div class="header-logo">
         <a href="index.html">Splash UI</a>
@@ -30,23 +31,11 @@
           <li class="no-bullets-li inline-block">
             <a href="docs.html">Docs</a>
           </li>
-          <li class="no-bullets-li inline-block">
-            <a href="examples.html">Examples</a>
-          </li>
         </ul>
-        <a
-          class="fs-30"
-          href="https://github.com/scjuly19/splash-ui"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class="fs-30" href="https://github.com/scjuly19/splash-ui" target="_blank" rel="noopener noreferrer">
           <i class="fa fa-github" aria-hidden="true"></i>
         </a>
-        <a
-          class="toggle-mode-btn borderless-btn fs-30"
-          id="toggle-mode"
-          type="button"
-        >
+        <a class="toggle-mode-btn borderless-btn fs-30" id="toggle-mode" type="button">
           <i class="fa fa-moon-o" aria-hidden="true"></i>
         </a>
         <a class="nav-dots fs-30 hide" id="toggle-menu">
@@ -57,16 +46,15 @@
     <div class="nav-dots-menu hide" id="nav-dots-menu">
       <ul class="nav-dots-menu-list">
         <li class="no-bullets-li"><a href="docs.html">Docs</a></li>
-        <li class="no-bullets-li"><a href="examples.html">Examples</a></li>
       </ul>
     </div>
     <main>
       <div class="main-container">
         <section>
           <h1 class="text-center">
-            Build your website with the help of pure css components.
+            Build your website with the help of pure css components
           </h1>
-          <p class="text-center mt-16">
+          <p class="text-center">
             Splash UI provides you with beautiful and easy to use css
             components. It also comes with some utility classes to help you
             design your own custom components or style the provided components
@@ -74,83 +62,63 @@
           </p>
 
           <div class="flex-center mt-16">
-            <a class="btn outline-btn" href="#installation-guide"
-              >Installation</a
-            >
+            <a class="btn outline-btn" href="#installation-guide">Installation</a>
             <a class="btn primary-btn ml-16" href="docs.html">Documentation </a>
           </div>
         </section>
 
-        <section
-          class="mt-64 guide-wrapper"
-          id="installation-guide"
-          
-        >
+        <section class="mt-64 guide-wrapper" id="installation-guide">
           <div>
-            <h3 >Installation guide</h3>
-            <p class="mt-16">
+            <h3>Installation guide</h3>
+            <p>
               To get started with Splash UI in your project, just copy and paste the
               <code class="code">link</code> tag in the <code class="code">head</code> of your html document.
-              <p>Check out documentation for additional details about the components of Splash</p>
-              
+            <p>Check out documentation for additional details about the components of Splash</p>
+
             </p>
           </div>
-            <div class="flex-center" style="flex-direction: column; padding: 0">
-            
-              <iframe
-  src="https://carbon.now.sh/embed/TCbC0xgOlFuffrlUVJZh"
-  style="width: 100%; height: 223px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-              
+          <div class="code-example">
+            <div class="code-snippet">
+              <iframe src="https://www.thiscodeworks.com/embed/61f8c63b1e1df40015379351"
+                style="width: 100%; height: auto;" frameborder="0"></iframe>
+
+            </div>
           </div>
         </section>
       </div>
     </main>
-    <footer class="footer mt-64 b-5 absolute">
+    <footer class="footer">
       <div class="flex-center text-center">
         <span>
           Made with love <i class="fa fa-heart" aria-hidden="true"></i> by
-          Sakshi Chaudhary</span
-        >
+          Sakshi Chaudhary</span>
       </div>
       <div class="flex-center">
         <ul>
           <li class="inline-block no-bullets-li">
-            <a
-              class="fs-30"
-              href="https://github.com/scjuly19"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fa fa-github" aria-hidden="true"></i
-            ></a>
+            <a class="fs-30" href="https://github.com/scjuly19" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github" aria-hidden="true"></i></a>
           </li>
           <li class="inline-block no-bullets-li">
-            <a
-              class="fs-30"
-              href="https://www.instagram.com/sakshi.codes"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fa fa-instagram" aria-hidden="true"></i>
+            <a class="fs-30" href="https://www.instagram.com/sakshi.codes" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </li>
           <li class="inline-block no-bullets-li">
-            <a
-              class="fs-30"
-              href="https://www.twitter.com/scjuly19"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <a class="fs-30" href="https://www.twitter.com/scjuly19" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-twitter-square" aria-hidden="true"></i>
             </a>
           </li>
           <li class="inline-block no-bullets-li">
-            <a class="fs-30" href="https://www.linkedin.com/in/scjuly19"
-              ><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <a class="fs-30" href="https://www.linkedin.com/in/scjuly19"><i class="fa fa-linkedin-square"
+                aria-hidden="true"></i>
             </a>
           </li>
         </ul>
       </div>
     </footer>
-    <script src="index.js"></script>
-  </body>
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>
