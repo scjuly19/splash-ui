@@ -35,9 +35,8 @@
 .hamburger-menu-btn {
   align-self: center;
   color: var(--primary-color);
-  position: absolute;
-  top: 5.5rem;
-  left: 1rem;
+  margin-right: 0.5rem;
+
 }
 
 .drawer-close-btn {
@@ -47,6 +46,7 @@
   right: 5px;
   background: none;
   border: none;
+  cursor: pointer;
 }
 .components-list li {
   padding: 5px 0px;

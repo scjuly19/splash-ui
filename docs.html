@@ -18,6 +18,12 @@
   <body>
     <div class="page-container">
       <header class="header-wrapper bottom-border">
+        <button
+        class="hamburger-menu-btn borderless-btn hide"
+        id="toggle-side-menu"
+      >
+        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+      </button>
         <div class="header-logo">
           <a href="index.html">Splash UI</a>
           <img src="./splash.png" class="icon" />
@@ -70,12 +76,6 @@
             </ul>
           </div>
         </nav>
-        <button
-          class="hamburger-menu-btn borderless-btn hide"
-          id="toggle-side-menu"
-        >
-          <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-        </button>
         <div class="drawer-container hide" id="drawer-menu">
           <div class="drawer-wrapper">
             <div class="drawer" id="drawer">
@@ -105,7 +105,7 @@
         </div>
         <main class="main-content-wrapper ml-8">
           <section id="overview">
-            <h1>Get started with Splash UI</h1>
+            <h1 class="text-center">Get started with Splash UI</h1>
             <p>
               <span class="highlight-text">Splash</span> comes with several
               ready to use components made using pure css and they can be easily
@@ -135,7 +135,7 @@
               <span class="highlight-text">responsive-img, rounded-img</span> in
               order to get responsive and round images.
             </p>
-            <h4>Example of Avatar</h4>
+            <h4 class="mt-64">Example of Avatar</h4>
             <div class="example flex-center wrap">
               <div class="avatar avatar-xs m-16">
                 <img
@@ -167,18 +167,18 @@
               </div>
             </div>
             <div class="code-example">
-              <div class="code-snippet">
+              <div class="code-snippet" >
                 <code>
                   <iframe
                     src="https://www.thiscodeworks.com/embed/61f8c8131e1df40015379357"
-                    style="width: 100%; height: auto"
+                    style="width: 100%; height: auto;"
                     frameborder="0"
                   ></iframe>
                 </code>
               </div>
             </div>
           </section>
-          <section id="alerts" class="mt-16">
+          <section id="alerts" class="mt-64">
             <h2>Alerts</h2>
             <h5 class="light-txt">
               Alerts can be used to notify user of an important information in
@@ -197,7 +197,7 @@
                 danger-alert, warning-alert and notify-alert.</span
               >
             </p>
-            <h4>Example of Alerts</h4>
+            <h4 class="mt-64">Example of Alerts</h4>
             <div class="example">
               <div class="alert basic-alert">This is a basic alert!</div>
               <div class="alert primary-alert mt-16">
@@ -231,7 +231,7 @@
               </div>
             </div>
           </section>
-          <section id="badges" class="mt-16">
+          <section id="badges" class="mt-64">
             <h2>Badges</h2>
             <h5 class="light-txt">
               Badges are used to display the status of the user or notification
@@ -253,7 +253,7 @@
               parent of the badge as relative to position the badge according to
               the parent.
             </p>
-            <h4>Example of badges</h4>
+            <h4 class="mt-64">Example of badges</h4>
             <div class="example flex align-items-center wrap">
               <div class="relative">
                 <div class="avatar avatar-lg m-16">
@@ -320,7 +320,7 @@
               </div>
             </div>
           </section>
-          <section id="buttons" class="mt-16">
+          <section id="buttons" class="mt-64">
             <h2>Buttons</h2>
             <h5 class="light-txt">
               Buttons are used to achieve a certain behaviour or task whenever
@@ -339,7 +339,7 @@
               e.g, <span class="highlight-text">primary-btn</span> for primary
               button.
             </p>
-            <h4>Example of buttons</h4>
+            <h4 class="mt-64">Example of buttons</h4>
             <div class="example flex align-item-center wrap">
               <button class="btn primary-btn">Primary Button</button>
               <button class="btn outline-btn ml-8">Outlined Button</button>
@@ -363,7 +363,7 @@
               </div>
             </div>
           </section>
-          <section id="cards" class="mt-16">
+          <section id="cards" class="mt-64">
             <h2>Cards</h2>
             <h5 class="light-txt">
               Cards can be used to display information collectively about a
@@ -381,7 +381,7 @@
               can remove the image and get a text only card. You can refer the
               code below for more details about structure of html.
             </p>
-            <h4>Example of Cards</h4>
+            <h4 class="mt-64">Example of Cards</h4>
             <div class="example flex wrap">
               <div class="m-16">
                 <div class="card card-vertical">
@@ -576,7 +576,7 @@
               </div>
             </div>
           </section>
-          <section id="images" class="mt-16">
+          <section id="images" class="mt-64">
             <h2>Images</h2>
             <h5 class="light-txt">
               Images can be made responsive to fit according to parent's width
@@ -590,7 +590,7 @@
               same aspect ratio. If you want to change the aspect ratio, you
               will have to resize your image.
             </p>
-            <h4>Example of Responsive Image</h4>
+            <h4 class="mt-64">Example of Responsive Image</h4>
             <div class="example flex wrap">
               <img
                 src="https://picsum.photos/id/1015/200.jpg"
@@ -598,7 +598,7 @@
                 class="responsive-img small-img"
               />
             </div>
-            <h4>Example of round image</h4>
+            <h4 class="mt-64">Example of round image</h4>
             <p>
               You can add class
               <span class="highlight-text">round-img</span> to make an image
@@ -623,7 +623,7 @@
               </div>
             </div>
           </section>
-          <section id="inputs" class="mt-16">
+          <section id="inputs" class="mt-64">
             <h2>Inputs</h2>
             <h5 class="light-txt">
               Inputs can be used to take user feedback or fill out input forms.
@@ -644,7 +644,7 @@
               <span class="highlight-text"> success-msg </span> and
               <span class="highlight-text">error-msg</span>
             </p>
-            <h4>Example of Inputs</h4>
+            <h4 class="mt-64">Example of Inputs</h4>
             <div class="example flex wrap">
               <div class="input-wrapper">
                 <input

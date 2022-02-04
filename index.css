@@ -31,8 +31,7 @@ body {
   font-family: "Lato", sans-serif;
   background-color: var(--bg-color);
   color: var(--font-color);
-  max-width: 90%;
-  margin: 0 auto;
+  margin: 0 1rem;
   font-size: calc(1rem + 0.25vh);
   overflow-x: hidden;
 }
