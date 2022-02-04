@@ -31,8 +31,7 @@ body {
   font-family: "Lato", sans-serif;
   background-color: var(--bg-color);
   color: var(--font-color);
-  max-width: 90%;
-  margin: 0 auto;
+  margin: 0 1rem;
   font-size: calc(1rem + 0.25vh);
   overflow-x: hidden;
 }
@@ -47,15 +46,8 @@ a {
 h1 {
   color: var(--heading-color);
   font-family: "Sansita One", serif;
-  font-size: 3rem;
 }
 
-p {
-  font-size: 1.125rem;
-}
-h2 {
-  font-size: 2rem;
-}
 /* || Sitewide*/
 .header-wrapper {
   align-items: center;
@@ -112,6 +104,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   padding-top: 1rem;
+  padding-bottom: 5rem;
 }
 .get-started-btn {
   background-color: var(--bg-color);
@@ -128,11 +121,50 @@ h2 {
   color: var(--primary-color);
 }
 .guide-wrapper {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-/* ||Web Specific styles*/
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+}
+.highlight-text {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.code-example {
+  margin: 2rem 0;
+}
+.code-snippet{
+  width: 100%;
+  margin: 2rem 0;
+  overflow: auto;
+}
+.outline-btn {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.outline-btn:hover {
+  background-color: var(--primary-color);
+}
+.primary-btn {
+  background-color: var(--primary-color);
+}
+/*|| Hide nav menu on desktop*/
+@media only screen and (min-width: 768px) {
+  .nav-dots-menu {
+    display: none;
+  }
+}
+/* ||Mobile Specific styles*/
 @media only screen and (max-width: 768px) {
   .header-nav-list,
   .side-nav-container {
@@ -141,16 +173,5 @@ h2 {
   .nav-dots,
   .hamburger-menu-btn {
     display: block;
-  }
-
-  h1 {
-    font-size: 2.25rem;
-  }
-
-  h2 {
-    font-size: 2.25rem;
-  }
-  .guide-wrapper {
-    grid-template-columns: 1fr;
   }
 }

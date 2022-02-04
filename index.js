@@ -40,6 +40,7 @@ const switchTheme = () => {
 /**Toggles header menu on mobile */
 const toggleMenu = () => {
   dotsMenu.classList.toggle("hide");
+  dotsMenu.scrollIntoView({behavior:"smooth"});
   if (!dotsMenu.classList.contains("hide")) {
     toggleMenuBtn.innerHTML = `<i class="fa fa-close"></i>`;
   } else {

@@ -28,3 +28,7 @@
 .flx-1 {
   flex-grow: 1;
 }
+/*Flex directions*/
+.column {
+  flex-direction: column;
+}

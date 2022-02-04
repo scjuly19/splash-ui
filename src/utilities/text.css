@@ -6,7 +6,12 @@
 .bold {
   font-weight: bold;
 }
+.light-txt{
+  font-weight: 300;
+  opacity: 0.5;
+}
 /*Text size*/
 .fs-30 {
   font-size: 1.5rem;
 }
+
