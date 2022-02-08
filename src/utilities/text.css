@@ -2,16 +2,39 @@
 .text-center {
   text-align: center;
 }
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
 /*Font weights*/
 .bold {
   font-weight: bold;
 }
-.light-txt{
+.light-txt {
   font-weight: 300;
   opacity: 0.5;
 }
 /*Text size*/
+.fs-16 {
+  font-size: 1rem;
+}
 .fs-30 {
   font-size: 1.5rem;
 }
-
+.fs-32 {
+  font-size: 2rem;
+}
+.fs-40 {
+  font-size: 2.5rem;
+}
+.fs-48 {
+  font-size: 3rem;
+}
+.fs-56 {
+  font-size: 3.5rem;
+}
+.fs-64 {
+  font-size: 4rem;
+}
