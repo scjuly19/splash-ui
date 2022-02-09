@@ -1,0 +1,24 @@
+:root{
+    --navbar-bg:#302ae6;
+    --font-clr:#fff;
+}
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    background-color:var(--navbar-bg);
+    color: var(--font-clr);
+    padding: 0rem 0.5rem;
+  }
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  .navbar-title {
+    margin-left: 0.5rem;
+  }
+  .navbar-nav a {
+    margin: 0px 10px;
+    color: var(--font-clr);
+  }
+  

@@ -13,7 +13,7 @@
   overscroll-behavior: contain;
   top: 4.5rem;
   width: 280px;
-  height: calc(100vh - 9rem);
+  height: 100vh;
   overflow-y: auto;
   display: block;
   flex-shrink: 0;
