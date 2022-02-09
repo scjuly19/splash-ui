@@ -9,7 +9,6 @@
 .side-nav-container {
   background-color: var(--nav-bg);
   padding: 1rem;
-  padding: 1rem;
   position: sticky;
   overscroll-behavior: contain;
   top: 4.5rem;
