@@ -56,7 +56,7 @@
 .card-primary-title,
 .card-primary-subtitle,
 .card-secondary-description,
-.card-actions a {
+.card-actions a, .modal-wrapper {
   color: black;
 }
 .card {
