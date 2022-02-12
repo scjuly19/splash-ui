@@ -1,4 +1,3 @@
-const drawer = document.getElementById("drawer");
 const sideNavBtn = document.getElementById("toggle-side-menu");
 const sideDrawer = document.getElementById("drawer-menu");
 const closeSideDrawer = document.getElementById("close-side-menu");
@@ -14,4 +13,3 @@ const closeDrawer = () => {
 };
 sideNavBtn.addEventListener("click", toggleSideMenu);
 closeSideDrawer.addEventListener("click", closeDrawer);
-drawer.addEventListener("click", toggleSideMenu);

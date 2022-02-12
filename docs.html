@@ -15,15 +15,16 @@
     <link rel="icon" href="./splash.png" type="image/icon type" />
     <title>Documentation</title>
   </head>
+
   <body>
     <div class="page-container">
       <header class="header-wrapper bottom-border">
         <button
-        class="hamburger-menu-btn borderless-btn hide"
-        id="toggle-side-menu"
-      >
-        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-      </button>
+          class="hamburger-menu-btn borderless-btn hide"
+          id="toggle-side-menu"
+        >
+          <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+        </button>
         <div class="header-logo">
           <a href="index.html">Splash UI</a>
           <img src="./splash.png" class="icon" />
@@ -73,6 +74,11 @@
               <li class="no-bullets-li"><a href="#cards">Card</a></li>
               <li class="no-bullets-li"><a href="#images">Image</a></li>
               <li class="no-bullets-li"><a href="#inputs">Input</a></li>
+              <li class="no-bullets-li"><a href="#text">Text Utilities</a></li>
+              <li class="no-bullets-li"><a href="#modal">Modal</a></li>
+              <li class="no-bullets-li">
+                <a href="#navbar">Navigation Header</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -98,6 +104,13 @@
                   <li class="no-bullets-li"><a href="#cards">Card</a></li>
                   <li class="no-bullets-li"><a href="#images">Image</a></li>
                   <li class="no-bullets-li"><a href="#inputs">Input</a></li>
+                  <li class="no-bullets-li">
+                    <a href="#text">Text Utilities</a>
+                  </li>
+                  <li class="no-bullets-li"><a href="#modal">Modal</a></li>
+                  <li class="no-bullets-li">
+                    <a href="#navbar">Navigation Header</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -167,11 +180,11 @@
               </div>
             </div>
             <div class="code-example">
-              <div class="code-snippet" >
+              <div class="code-snippet">
                 <code>
                   <iframe
                     src="https://www.thiscodeworks.com/embed/61f8c8131e1df40015379357"
-                    style="width: 100%; height: auto;"
+                    style="width: 100%; height: auto"
                     frameborder="0"
                   ></iframe>
                 </code>
@@ -689,6 +702,163 @@
               </div>
             </div>
           </section>
+          <section id="text" class="mt-64">
+            <h2>Text Utilities</h2>
+            <h5 class="light-txt">
+              Splash UI offers text utilities to ease the way for changing the
+              look and feel of the texts.
+            </h5>
+            <p>
+              The utility classes available for changing the font-weights are-
+              <span class="highlight-text">bold</span> and
+              <span class="highlight-text">light-txt</span>. If you want to
+              change the alignment of text then make use of these- to center the
+              text use, <span class="highlight-text">text-center</span>, to
+              align the text to left-
+              <span class="highlight-text">text-left</span> and to align text
+              towards right- <span class="highlight-text">text-right</span>. In
+              addition, some font sizes are also provided, these are provided in
+              <i>rems</i>, and the class name represent the value in px, so
+              <span class="highlight-text">fs-16</span> means font-size of 16px.
+              Similarly, other font-size classes are-
+              <span class="highlight-text"
+                >fs-30, fs-32, fs-40, fs-48, fs-56
+              </span>
+              and
+              <span class="highlight-text">fs-64</span>
+            </p>
+            <h4 class="mt-64">Example of Text Utilities</h4>
+            <div class="example flex wrap column">
+              <p class="bold">This is bold text</p>
+              <p class="light-txt">This is light text</p>
+              <p class="text-center">This text is center aligned</p>
+              <p class="text-left">This text is left aligned</p>
+              <p class="text-right">This text is right aligned</p>
+              <p class="fs-16">This has a font size of 16px</p>
+              <p class="fs-32">This has a font size of 32px</p>
+            </div>
+            <div class="code-example">
+              <div class="code-snippet">
+                <code>
+                  <iframe
+                    src="https://www.thiscodeworks.com/embed/6202b34d234b8a0015700bd3"
+                    style="width: 100%; height: auto"
+                    frameborder="0"
+                  ></iframe>
+                </code>
+              </div>
+            </div>
+          </section>
+          <section id="modal" class="mt-64">
+            <h2>Modal</h2>
+            <h5 class="light-txt">
+              Modal can be used to add dialogs to your site or show
+              notifications to the user.
+            </h5>
+            <p>
+              To use the modal, you need to add class,
+              <span class="highlight-text">modal-container</span> in the parent
+              of the modal and
+              <span class="highlight-text">modal-wrapper</span> to the parent of
+              the modal content. The button to open the modal, must have id of
+              <span class="highlight-text">open-modal</span> and the close
+              button inside the modal should have the id
+              <span class="highlight-text">close-modal</span>. Note: Do add the
+              link to script in your html to enable to functionality of the
+              modal or you can write the same in your own javascript file.
+            </p>
+            <h4 class="mt-64">Example of Modal</h4>
+            <div class="example flex-center">
+              <button class="btn primary-btn" id="open-modal">
+                Open Modal
+              </button>
+            </div>
+            <div class="modal-container" id="modal-container">
+              <div class="modal-wrapper">
+                <button id="close-modal">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <h2>Title</h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry. Lorem Ipsum is simply dummy
+                  text of the printing and typesetting industry. Lorem Ipsum is
+                  simply dummy text of the printing and typesetting industry.
+                </p>
+              </div>
+            </div>
+            <div class="code-example">
+              <div class="code-snippet">
+                <code>
+                  <iframe
+                    src="https://www.thiscodeworks.com/embed/6203c30f234b8a0015700d0f"
+                    style="width: 100%; height: auto"
+                    frameborder="0"
+                  ></iframe>
+                </code>
+                <h2>JavaScript for Modal</h2>
+                <p>
+                  JavaScript for modal can be added by a script tag using the below
+                  link or it can be embedded in your existing JavaScript file
+                 by copying the below code to it.
+                </p>
+                <code>
+                  <iframe
+                    src="https://www.thiscodeworks.com/embed/620683b73d90130015398b43"
+                    style="width: 100%; height: auto"
+                    frameborder="0"
+                  ></iframe>
+                </code>
+              </div>
+            </div>
+          </section>
+          <section id="navbar" class="mt-64">
+            <h2>Navigation Header</h2>
+            <h5 class="light-txt">
+              Navigation header can be used to provide the navigation links to
+              other screens.
+            </h5>
+            <p>
+              To use navigation header, provide the parent of the navigation
+              header with class,
+              <span class="highlight-text">navbar-wrapper</span>. In the wrapper
+              of title of website inside the navbar, provide class
+              <span class="highlight-text">navbar-logo</span>. For more details
+              on html structure refer the code snippet below.
+            </p>
+            <h4 class="mt-64">Example of Navigation header</h4>
+            <div class="example">
+              <div class="navbar-wrapper">
+                <div class="navbar-logo">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                  <h3 class="navbar-title">Ecom</h3>
+                </div>
+                <nav class="navbar-nav">
+                  <a>
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                  </a>
+                  <a>
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                  </a>
+                  <a>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </a>
+                </nav>
+              </div>
+            </div>
+            <div class="code-example">
+              <div class="code-snippet">
+                <code>
+                  <iframe
+                    src="https://www.thiscodeworks.com/embed/6203c7dfc6efb50015062d41"
+                    style="width: 100%; height: auto"
+                    frameborder="0"
+                  ></iframe>
+                </code>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
       <footer class="footer">
@@ -738,5 +908,6 @@
     </div>
     <script src="index.js"></script>
     <script src="./src/components/drawer/drawer.js"></script>
+    <script src="./src/components/modal/modal.js"></script>
   </body>
 </html>
