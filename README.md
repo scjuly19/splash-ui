@@ -3,6 +3,8 @@
 
  The components are built keeping in mind the responsiveness and can be adjusted as per your needs by overriding the pre-defined style classes.
  
+ ## Documentation 
+ 
  You can find full documentation over here- [Splash UI](https://splash-ui-lib.netlify.app)
  
  Here's a quick glimpse of the library:  
@@ -17,3 +19,28 @@ You can use it directly in your project by embedding the link in the head of you
 ````
 <link rel="stylesheet" href="https://splash-ui-lib.netlify.app/src/components/index.css" />
 ````
+## Features
+Splash UI comes with the bewlo components as of now:
+- Avatar
+  - 4 different sizes of avatar- extra-small,small,medium and large
+- Alerts
+  - Different types of alert for notifications- warning,success,basic,danger etc.
+- Badge
+  - To show the status or count of numbers on icons
+- Button
+  - Primary, Secondary, Link and Icon buttons
+- Card
+  - Horizontal and Vertical Cards
+  - Card with overlay text
+  - Card with text only
+- Images
+  - Responsive and round images
+- Input
+   - Basic Inputs
+   - Inputs with error and successfull validation messages
+- Text Utilities
+  - To adjust the font-weights and font-sizes of your font
+- Modal
+  - To showcase a confirmation or important notification on the screen.
+- Navigation Header
+  - Handle the naviagtion bar of your site
