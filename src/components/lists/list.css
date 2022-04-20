@@ -1,0 +1,25 @@
+:root {
+  --primary: rgba(0, 0, 0, 0.125);
+}
+.list-container {
+  border-top: 0px;
+  list-style: none;
+}
+.list-item {
+  border: 1px solid var(--primary);
+  padding: 0.5em;
+}
+.stacked-list-item {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--primary);
+  margin-top: 1px;
+}
+.list-item-title {
+  font-weight: bold;
+}
+.list-item-subtitle {
+  opacity: 0.5;
+  margin-top: -20px;
+  font-size: 0.8em;
+}

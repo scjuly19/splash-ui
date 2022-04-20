@@ -79,6 +79,9 @@
               <li class="no-bullets-li">
                 <a href="#navbar">Navigation Header</a>
               </li>
+              <li class="no-bullets-li">
+                <a href="#lists">Lists</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -97,19 +100,38 @@
               <div class="side-nav-item">
                 <a>Components</a>
                 <ul class="components-list">
-                  <li class="no-bullets-li"><a href="#avatar">Avatar</a></li>
-                  <li class="no-bullets-li"><a href="#alerts">Alert</a></li>
-                  <li class="no-bullets-li"><a href="#badges">Badge</a></li>
-                  <li class="no-bullets-li"><a href="#buttons">Button</a></li>
-                  <li class="no-bullets-li"><a href="#cards">Card</a></li>
-                  <li class="no-bullets-li"><a href="#images">Image</a></li>
-                  <li class="no-bullets-li"><a href="#inputs">Input</a></li>
-                  <li class="no-bullets-li">
+                  <li class="no-bullets-li" onclick="toggleSideMenu()">
+                    <a href="#avatar">Avatar</a>
+                  </li>
+                  <li class="no-bullets-li" onclick="toggleSideMenu()">
+                    <a href="#alerts">Alert</a>
+                  </li>
+                  <li class="no-bullets-li" onclick="toggleSideMenu()">
+                    <a href="#badges">Badge</a>
+                  </li>
+                  <li class="no-bullets-li" onclick="toggleSideMenu()">
+                    <a href="#buttons">Button</a>
+                  </li>
+                  <li class="no-bullets-li" onclick="toggleSideMenu()">
+                    <a href="#cards">Card</a>
+                  </li>
+                  <li class="no-bullets-li" onclick="toggleSideMenu()">
+                    <a href="#images">Image</a>
+                  </li>
+                  <li class="no-bullets-li" onclick="toggleSideMenu()">
+                    <a href="#inputs">Input</a>
+                  </li>
+                  <li class="no-bullets-li" onclick="toggleSideMenu()">
                     <a href="#text">Text Utilities</a>
                   </li>
-                  <li class="no-bullets-li"><a href="#modal">Modal</a></li>
-                  <li class="no-bullets-li">
+                  <li class="no-bullets-li" onclick="toggleSideMenu()">
+                    <a href="#modal">Modal</a>
+                  </li>
+                  <li class="no-bullets-li" onclick="toggleSideMenu()">
                     <a href="#navbar">Navigation Header</a>
+                  </li>
+                  <li class="no-bullets-li" onclick="toggleSideMenu()">
+                    <a href="#lists">Lists</a>
                   </li>
                 </ul>
               </div>
@@ -799,9 +821,9 @@
                 </code>
                 <h2>JavaScript for Modal</h2>
                 <p>
-                  JavaScript for modal can be added by a script tag using the below
-                  link or it can be embedded in your existing JavaScript file
-                 by copying the below code to it.
+                  JavaScript for modal can be added by a script tag using the
+                  below link or it can be embedded in your existing JavaScript
+                  file by copying the below code to it.
                 </p>
                 <code>
                   <iframe
@@ -853,6 +875,86 @@
                   <iframe
                     src="https://www.thiscodeworks.com/embed/6203c7dfc6efb50015062d41"
                     style="width: 100%; height: auto"
+                    frameborder="0"
+                  ></iframe>
+                </code>
+              </div>
+            </div>
+          </section>
+          <section id="lists" class="mt-64">
+            <h2>Lists</h2>
+            <h5 class="light-txt">
+              Lists can be used to showcase list of particular items or a menu
+              of a set of related things.
+            </h5>
+            <p>
+              To use lists, provide the parent of the list items with class,
+              <span class="highlight-text">list-container</span>. In the list
+              items, provide class
+              <span class="highlight-text">list-item</span> for basic list. And
+              for stacked list provide class,
+              <span class="highlight-text">stacked-list-item</span>
+              and structure the code as shown below.
+            </p>
+            <h4 class="mt-64">Example of Lists</h4>
+            <div class="example">
+              <h6>Basic List</h6>
+              <ul class="list-container">
+                <li class="list-item">First Item</li>
+                <li class="list-item">Second Item</li>
+                <li class="list-item">Third Item</li>
+                <li class="list-item">Fourth Item</li>
+                <li class="list-item">Fifth Item</li>
+              </ul>
+              <h6 class="mt-64">Stacked Lists</h6>
+              <ul class="list-container">
+                <li class="stacked-list-item">
+                  <div class="avatar avatar-xs m-16">
+                    <img
+                      src="https://picsum.photos/id/237/200.jpg"
+                      alt="avatar"
+                      class="responsive-img rounded-img avatar-xs"
+                    />
+                  </div>
+                  <div>
+                    <p class="list-item-title">Chandler Bing</p>
+                    <p class="list-item-subtitle">bing@gmail.com</p>
+                  </div>
+                </li>
+                <li class="stacked-list-item">
+                  <div class="avatar avatar-xs m-16">
+                    <img
+                      src="https://picsum.photos/id/237/200.jpg"
+                      alt="avatar"
+                      class="responsive-img rounded-img avatar-xs"
+                    />
+                  </div>
+                  <div>
+                    <p class="list-item-title">Joe Miller</p>
+                    <p class="list-item-subtitle">miller@gmail.com</p>
+                  </div>
+                </li>
+                <li class="stacked-list-item">
+                  <div class="avatar avatar-xs m-16">
+                    <img
+                      src="https://picsum.photos/id/237/200.jpg"
+                      alt="avatar"
+                      class="responsive-img rounded-img avatar-xs"
+                    />
+                  </div>
+                  <div>
+                    <p class="list-item-title">Helin Kelly</p>
+                    <p class="list-item-subtitle">kelly@gmail.com</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="code-example">
+              <div class="code-snippet">
+                <code>
+                  <iframe
+                    src="https://www.thiscodeworks.com/embed/624c03b5578f5f00150dc62c"
+                    style="width: 100%; height: 359px"
                     frameborder="0"
                   ></iframe>
                 </code>
