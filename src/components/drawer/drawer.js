@@ -7,9 +7,5 @@ const toggleSideMenu = () => {
   sideDrawer.classList.toggle("hide");
 };
 
-/**Close menu drawer */
-const closeDrawer = () => {
-  sideDrawer.classList.remove("hide");
-};
 sideNavBtn.addEventListener("click", toggleSideMenu);
-closeSideDrawer.addEventListener("click", closeDrawer);
+closeSideDrawer.addEventListener("click", toggleSideMenu);

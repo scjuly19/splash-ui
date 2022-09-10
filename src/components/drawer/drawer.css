@@ -29,3 +29,8 @@
   overflow-y: auto;
 
 }
+@media only screen and (min-width: 768px) {
+.drawer-container,.drawer,.drawer-wrapper{
+  display: none;
+}
+}
